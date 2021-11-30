@@ -1,1 +1,1 @@
-# CSCI_596_FINAL_PROJECT
+# Optimization of Fast Fourier Transform
