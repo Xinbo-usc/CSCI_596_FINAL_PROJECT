@@ -27,7 +27,7 @@ vector<double>ForceMul(vector<double>A,vector<double>B) {
 
 # Basic FFT
 
-A **fast Fourier transform** (**FFT**) includes 2 parts:  [discrete Fourier transform](https://en.wikipedia.org/wiki/Discrete_Fourier_transform) (DFT) and  its inverse (IDFT).  In fft_op, the first part is the binary flip, which is responsible for changing the original ordering through the summarized rules. The second part is to use different butterfly coefficients for different layers to calculate. The third part is for idft to divide each result by N.
+A **fast Fourier transform** (**FFT**) includes 2 parts:  [discrete Fourier transform](https://en.wikipedia.org/wiki/Discrete_Fourier_transform) (DFT) and  its inverse (IDFT).  In fft_op, the first part is the binary flip, which is responsible for changing the original ordering based on the rules. The second part is to use different butterfly coefficients for different layers to calculate. The third part is for idft to divide each result by N.
 
 ```c++
 void fft_op(cd *a, int n) {
